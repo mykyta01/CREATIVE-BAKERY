@@ -2,6 +2,7 @@
   &__content {
     position: relative;
     @include pageGrid;
+    @include contentPaddingInline;
 
     margin-bottom: 104px;
 

@@ -1,4 +1,5 @@
 .what-we-bake {
+  @include contentPaddingInline;
   padding-bottom: 80px;
 
   @include onTablet {
@@ -20,7 +21,6 @@
 
   &__product-card {
     @include pageGrid;
-    // gap: 64px;
     row-gap: 64px;
   }
 

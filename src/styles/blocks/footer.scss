@@ -2,6 +2,7 @@
   background-color: $secondary-text-color;
   color: $color-white;
   padding: 56px 0;
+  @include contentPaddingInline;
 
   &__content {
     display: flex;
@@ -22,6 +23,12 @@
     @include onDesktop {
       margin-bottom: 0;
     }
+  }
+
+  &__img {
+    height: 24px;
+
+    @include hover(transform, scale(0.9));
   }
 
   &__title {
@@ -75,7 +82,7 @@
     text-transform: uppercase;
   }
 
-  &__list {
+  &__list--nav__list {
     & > * {
       &:not(:last-child) {
         margin-bottom: 16px;
@@ -83,11 +90,10 @@
     }
   }
 
-  &__link {
+  &__link--nav__link {
     text-decoration: none;
     color: inherit;
     @include hover(color, $main-text-color);
-
   }
 
   &__social-links {

@@ -1,4 +1,5 @@
 .about-us {
+  @include contentPaddingInline;
   background-image: url(../images/crumbs.svg);
   background-repeat: no-repeat;
   background-size: contain;

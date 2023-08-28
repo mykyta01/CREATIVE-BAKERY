@@ -4,13 +4,10 @@
   scroll-behavior: smooth;
   background-color: $main-body-color;
   font-family: "Inter", "Arial", sans-serif;
+  margin: 0;
 
   &:has(.page__menu:target) {
     overflow: hidden;
-  }
-
-  &__body {
-    margin: 0;
   }
 
   &__menu {
@@ -18,7 +15,6 @@
     right: 0;
     left: 0;
     top: 0;
-
   }
 
   &__main {

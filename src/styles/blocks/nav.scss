@@ -6,6 +6,28 @@
     margin: 0;
     padding: 0;
     list-style: none;
+
+    @include onDesktop {
+      display: flex;
+      gap: 64px;
+    }
+  }
+
+  &__list--top-bar__list {
+    display: none;
+
+    @include onDesktop {
+      display: flex;
+      gap: 64px;
+    }
+  }
+
+  &__list--menu__list {
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
   }
 
   &__link {

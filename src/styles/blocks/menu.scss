@@ -13,14 +13,6 @@
     transform: translateX(0);
   }
 
-  &__list {
-    top: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    align-items: center;
-  }
-
   &__bottom {
     position: absolute;
     top: 50%;
